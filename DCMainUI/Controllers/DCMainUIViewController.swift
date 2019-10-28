@@ -36,7 +36,7 @@ extension DCMainUIViewController: UITableViewDataSource, UITableViewDelegate {
     }
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        (flow as! Main.UI.Flow.Default).showSecond(row: service.collection[indexPath.row])
+        (flow as! Main.UI.Flow.Initial).showSecond(row: service.collection[indexPath.row])
     }
 }
 
