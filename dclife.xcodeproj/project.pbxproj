@@ -43,11 +43,14 @@
 		78B088F42367FAB8002CD587 /* DCLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088EA2367FAB8002CD587 /* DCLog.swift */; };
 		78B088F52367FAB8002CD587 /* LogDurableTransformationDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088ED2367FAB8002CD587 /* LogDurableTransformationDateFormatter.swift */; };
 		78B088F62367FAB8002CD587 /* LogServiceStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088EF2367FAB8002CD587 /* LogServiceStream.swift */; };
-		78B088F72367FAB8002CD587 /* LogServiceStreamConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088F02367FAB8002CD587 /* LogServiceStreamConsole.swift */; };
+		78B088F72367FAB8002CD587 /* LogServiceConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088F02367FAB8002CD587 /* LogServiceConsole.swift */; };
 		78B088F82367FAB8002CD587 /* LogModelEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088F22367FAB8002CD587 /* LogModelEvent.swift */; };
 		78B088F92367FAB8002CD587 /* LogModelDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088F32367FAB8002CD587 /* LogModelDevice.swift */; };
 		78B088FD2367FB0A002CD587 /* RunLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088FB2367FB0A002CD587 /* RunLoop.swift */; };
 		78B088FE2367FB0A002CD587 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088FC2367FB0A002CD587 /* String.swift */; };
+		78B0890023681490002CD587 /* LogStreamFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088FF23681490002CD587 /* LogStreamFile.swift */; };
+		78B0890223681541002CD587 /* LogDurableWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B0890123681541002CD587 /* LogDurableWriter.swift */; };
+		78B08904236815BC002CD587 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B08903236815BC002CD587 /* Loggable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,11 +178,14 @@
 		78B088EA2367FAB8002CD587 /* DCLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCLog.swift; sourceTree = "<group>"; };
 		78B088ED2367FAB8002CD587 /* LogDurableTransformationDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDurableTransformationDateFormatter.swift; sourceTree = "<group>"; };
 		78B088EF2367FAB8002CD587 /* LogServiceStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogServiceStream.swift; sourceTree = "<group>"; };
-		78B088F02367FAB8002CD587 /* LogServiceStreamConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogServiceStreamConsole.swift; sourceTree = "<group>"; };
+		78B088F02367FAB8002CD587 /* LogServiceConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogServiceConsole.swift; sourceTree = "<group>"; };
 		78B088F22367FAB8002CD587 /* LogModelEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogModelEvent.swift; sourceTree = "<group>"; };
 		78B088F32367FAB8002CD587 /* LogModelDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogModelDevice.swift; sourceTree = "<group>"; };
 		78B088FB2367FB0A002CD587 /* RunLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLoop.swift; sourceTree = "<group>"; };
 		78B088FC2367FB0A002CD587 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		78B088FF23681490002CD587 /* LogStreamFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogStreamFile.swift; sourceTree = "<group>"; };
+		78B0890123681541002CD587 /* LogDurableWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDurableWriter.swift; sourceTree = "<group>"; };
+		78B08903236815BC002CD587 /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,6 +355,7 @@
 				78B088E02367FA8F002CD587 /* DCLog.h */,
 				78B088E12367FA8F002CD587 /* Info.plist */,
 				78B088EA2367FAB8002CD587 /* DCLog.swift */,
+				78B08903236815BC002CD587 /* Loggable.swift */,
 				78B088EB2367FAB8002CD587 /* Durable */,
 				78B088F12367FAB8002CD587 /* Models */,
 				78B088EE2367FAB8002CD587 /* Service */,
@@ -359,24 +366,18 @@
 		78B088EB2367FAB8002CD587 /* Durable */ = {
 			isa = PBXGroup;
 			children = (
-				78B088EC2367FAB8002CD587 /* Transformation */,
+				78B088ED2367FAB8002CD587 /* LogDurableTransformationDateFormatter.swift */,
+				78B0890123681541002CD587 /* LogDurableWriter.swift */,
 			);
 			path = Durable;
-			sourceTree = "<group>";
-		};
-		78B088EC2367FAB8002CD587 /* Transformation */ = {
-			isa = PBXGroup;
-			children = (
-				78B088ED2367FAB8002CD587 /* LogDurableTransformationDateFormatter.swift */,
-			);
-			path = Transformation;
 			sourceTree = "<group>";
 		};
 		78B088EE2367FAB8002CD587 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				78B088EF2367FAB8002CD587 /* LogServiceStream.swift */,
-				78B088F02367FAB8002CD587 /* LogServiceStreamConsole.swift */,
+				78B088F02367FAB8002CD587 /* LogServiceConsole.swift */,
+				78B088FF23681490002CD587 /* LogStreamFile.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -678,10 +679,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B0890023681490002CD587 /* LogStreamFile.swift in Sources */,
 				78B088F92367FAB8002CD587 /* LogModelDevice.swift in Sources */,
 				78B088F62367FAB8002CD587 /* LogServiceStream.swift in Sources */,
+				78B0890223681541002CD587 /* LogDurableWriter.swift in Sources */,
 				78B088F52367FAB8002CD587 /* LogDurableTransformationDateFormatter.swift in Sources */,
-				78B088F72367FAB8002CD587 /* LogServiceStreamConsole.swift in Sources */,
+				78B088F72367FAB8002CD587 /* LogServiceConsole.swift in Sources */,
+				78B08904236815BC002CD587 /* Loggable.swift in Sources */,
 				78B088F42367FAB8002CD587 /* DCLog.swift in Sources */,
 				78B088F82367FAB8002CD587 /* LogModelEvent.swift in Sources */,
 			);

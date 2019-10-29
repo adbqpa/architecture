@@ -17,3 +17,19 @@ public enum Log {
         }
     }
 }
+
+extension Log {
+    public enum Stream {
+        case console
+        case file(url: URL, maxCount: Int)
+    }
+}
+
+//extension Log {
+//    public var service: Log.Service.Stream {
+//        switch self {
+//        case .console: return Log.Service.Console()
+//        case .url(let url, let maxCount): return Log.Service.Fi
+//        }
+//    }
+//}
