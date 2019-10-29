@@ -51,6 +51,7 @@
 		78B0890023681490002CD587 /* LogStreamFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088FF23681490002CD587 /* LogStreamFile.swift */; };
 		78B0890223681541002CD587 /* LogDurableWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B0890123681541002CD587 /* LogDurableWriter.swift */; };
 		78B08904236815BC002CD587 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B08903236815BC002CD587 /* Loggable.swift */; };
+		78B089062368191E002CD587 /* Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B089052368191E002CD587 /* Templates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,7 @@
 		78B088FF23681490002CD587 /* LogStreamFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogStreamFile.swift; sourceTree = "<group>"; };
 		78B0890123681541002CD587 /* LogDurableWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDurableWriter.swift; sourceTree = "<group>"; };
 		78B08903236815BC002CD587 /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
+		78B089052368191E002CD587 /* Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Templates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +346,7 @@
 				78AF65CC2366C9810060A1BE /* DCCommon.h */,
 				78AF65CD2366C9810060A1BE /* Info.plist */,
 				78AF65E42366C9C50060A1BE /* DCCommon.swift */,
+				78B089052368191E002CD587 /* Templates.swift */,
 				78B088FA2367FB0A002CD587 /* Extensions */,
 			);
 			path = DCCommon;
@@ -669,6 +672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B089062368191E002CD587 /* Templates.swift in Sources */,
 				78B088FE2367FB0A002CD587 /* String.swift in Sources */,
 				78AF65E52366C9C50060A1BE /* DCCommon.swift in Sources */,
 				78B088FD2367FB0A002CD587 /* RunLoop.swift in Sources */,

@@ -3,8 +3,9 @@
 //
 
 import Foundation
+import DCCommon
 
-public protocol LogDurableTransformationDateFormatter {
+public protocol LogDurableTransformationDateFormatter: Common.Durable.Formatter {
     var formatter: Foundation.DateFormatter { get }
 }
 
