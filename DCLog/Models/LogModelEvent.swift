@@ -6,7 +6,7 @@ import Foundation
 import DCCommon
 
 extension Log.Model {
-    public struct Event: Common.Model.Object {
+    public struct Event: Common.Model.ObjectProtocol {
         public let uuid = String.randomUUID()
         public let level: Level
         public let domain: String

@@ -4,14 +4,20 @@
 
 import Foundation
 
-public protocol CommonServiceLogic: Common.Component {}
+public protocol CommonServiceLogicProtocol: Common.ComponentProtocol {}
 
-public protocol CommonServiceObject: Common.Service.Logic {
+public protocol CommonServiceObjectProtocol: Common.Service.LogicProtocol {
     associatedtype T
     var object: T? { get }
 }
 
-public protocol CommonServiceCollection: Common.Service.Logic {
+public protocol CommonServiceCollectionProtocol: Common.Service.LogicProtocol {
     associatedtype T
     var collection: [T] { get }
+}
+
+extension Common.Service {
+    public typealias LogicProtocol = CommonServiceLogicProtocol
+    public typealias ObjectProtocol = CommonServiceObjectProtocol
+    public typealias CollectionProtocol = CommonServiceCollectionProtocol
 }

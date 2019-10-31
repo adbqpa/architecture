@@ -6,7 +6,7 @@ import Foundation
 import DCCommon
 
 extension Log.Model {
-    public struct Device: Common.Model.Codable {
+    public struct Device: Common.Model.ObjectProtocol {
         public let uuid: String
         public let name: String
         public let iOSVersion: String

@@ -4,17 +4,25 @@
 
 import Foundation
 
-public protocol CommonDurableProcess: Common.Component {}
+public protocol CommonDurableProcessProtocol: Common.ComponentProtocol {}
 
-public protocol CommonDurableTransformation: Common.Durable.Process {
+public protocol CommonDurableTransformationProtocol: Common.Durable.ProcessProtocol {
     associatedtype Data
     associatedtype Object
     func from(object: Object) -> Data?
     func object(data: Object) -> Object?
 }
 
-public protocol CommonDurableFormatter: Common.Durable.Process {}
+public protocol CommonDurableFormatterProtocol: Common.Durable.ProcessProtocol {}
 
-public protocol CommonDurableReader: CommonDurableProcess {}
+public protocol CommonDurableReaderProtocol: CommonDurableProcessProtocol {}
 
-public protocol CommonDurableWriter: CommonDurableProcess {}
+public protocol CommonDurableWriterProtocol: CommonDurableProcessProtocol {}
+
+extension Common.Durable {
+    public typealias ProcessProtocol = CommonDurableProcessProtocol
+    public typealias TransformationProtocol = CommonDurableTransformationProtocol
+    public typealias ReaderProtocol = CommonDurableReaderProtocol
+    public typealias WriterProtocol = CommonDurableWriterProtocol
+    public typealias FormatterProtocol = CommonDurableFormatterProtocol
+}

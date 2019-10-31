@@ -4,4 +4,8 @@
 
 import Foundation
 
-public protocol CommonComponent {}
+public protocol CommonComponentProtocol {}
+
+extension Common {
+    public typealias ComponentProtocol = CommonComponentProtocol
+}
