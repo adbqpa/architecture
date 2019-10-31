@@ -5,7 +5,7 @@
 import UIKit
 import DCCommon
 
-@objc public protocol CommonUIControllerObjectProtocol: CommonUIComponentProtocol {
+public protocol CommonUIControllerObjectProtocol: CommonUIComponentProtocol {
     var flow: Common.UI.Flow.ObjectProtocol! { get set }
     static var storyboardIdentifier: String { get }
 }
