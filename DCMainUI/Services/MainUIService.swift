@@ -7,7 +7,7 @@ import DCCommonUI
 import DCCommon
 
 extension Main.UI.Service {
-    class First: NSObject, Common.UI.ServiceCollection {
+    class First: NSObject, Common.UI.Service.CollectionProtocol {
         
         var collection = [Main.UI.Model.Row]()
         

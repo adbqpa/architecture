@@ -6,11 +6,10 @@ import Foundation
 
 public enum Common {
     public typealias Component = CommonComponent
-    public typealias ComponentObjectiveC = CommonComponentObjectiveC
     public enum Model {
-        public typealias Codable = CommonModelCodable
-        public typealias Object = CommonModelObject
-        public typealias Collection = CommonModelCollection
+        public typealias Codable = CommonModelCodableProtocol
+        public typealias Object = CommonModelObjectProtocol
+        public typealias Collection = CommonModelCollectionProtocol
     }
     public enum Service {
         public typealias Logic = CommonServiceLogic

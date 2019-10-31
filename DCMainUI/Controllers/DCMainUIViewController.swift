@@ -6,11 +6,11 @@ import UIKit
 import DCCommonUI
 import DCCommon
 
-public class DCMainUIViewController: UIViewController, Common.UI.Controller {
+public class DCMainUIViewController: UIViewController, Common.UI.Controller.ObjectProtocol {
     
     // MARK: - Common.UI.Controller
     
-    public weak var flow: Common.UI.Flow!
+    public weak var flow: Common.UI.Flow.ObjectProtocol!
     public static var storyboardIdentifier = "first"
     private let service = Main.UI.Service.First()
     
