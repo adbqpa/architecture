@@ -36,7 +36,6 @@
 		788BDD29236C09AD00A2AB9B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F90A2369DD2E00300812 /* View.swift */; };
 		788BDD2A236C09AD00A2AB9B /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F90E2369DF8200300812 /* Controller.swift */; };
 		788BDD2B236C09AD00A2AB9B /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BDCBF236BC55200A2AB9B /* Factory.swift */; };
-		788BDD2C236C0A2200A2AB9B /* DCTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; };
 		788BDD31236C0A5D00A2AB9B /* DCTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; };
 		788BDD36236C0A5F00A2AB9B /* DCTemplatesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD11236C096200A2AB9B /* DCTemplatesUI.framework */; };
 		78AF65352366C7AF0060A1BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF65342366C7AF0060A1BE /* AppDelegate.swift */; };
@@ -64,6 +63,11 @@
 		78D0D3DC236C0D2500079E0C /* DCCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D0D3DB236C0D2500079E0C /* DCCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78D0D3DF236C0D3B00079E0C /* RunLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0D3DE236C0D3B00079E0C /* RunLoop.swift */; };
 		78D0D3E1236C0D5800079E0C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0D3E0236C0D5800079E0C /* String.swift */; };
+		78FB2870236C10D9001756C9 /* DCTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; };
+		78FB2878236C1144001756C9 /* DCTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; };
+		78FB2879236C1144001756C9 /* DCTemplates.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		78FB287B236C1168001756C9 /* DCCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D0D3CF236C0D0600079E0C /* DCCommon.framework */; };
+		78FB287C236C1168001756C9 /* DCCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78D0D3CF236C0D0600079E0C /* DCCommon.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,13 +84,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 788BDD10236C096200A2AB9B;
 			remoteInfo = DCTemplatesUI;
-		};
-		788BDD2E236C0A2200A2AB9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 788BDCFF236C095900A2AB9B;
-			remoteInfo = DCTemplates;
 		};
 		788BDD33236C0A5D00A2AB9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -123,6 +120,27 @@
 			remoteGlobalIDString = 78D0D3CE236C0D0600079E0C;
 			remoteInfo = DCCommon;
 		};
+		78FB286D236C10D6001756C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788BDCFF236C095900A2AB9B;
+			remoteInfo = DCTemplates;
+		};
+		78FB2875236C1110001756C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788BDCFF236C095900A2AB9B;
+			remoteInfo = DCTemplates;
+		};
+		78FB287D236C1168001756C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D0D3CE236C0D0600079E0C;
+			remoteInfo = DCCommon;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -137,6 +155,18 @@
 				78B088E62367FA8F002CD587 /* DCLog.framework in Embed Frameworks */,
 				78AF65B02366C9730060A1BE /* DCMainUI.framework in Embed Frameworks */,
 				788BDD19236C096200A2AB9B /* DCTemplatesUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78FB287A236C1144001756C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				78FB287C236C1168001756C9 /* DCCommon.framework in Embed Frameworks */,
+				78FB2879236C1144001756C9 /* DCTemplates.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788BDD2C236C0A2200A2AB9B /* DCTemplates.framework in Frameworks */,
+				78FB2870236C10D9001756C9 /* DCTemplates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +273,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78FB287B236C1168001756C9 /* DCCommon.framework in Frameworks */,
+				78FB2878236C1144001756C9 /* DCTemplates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +570,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				788BDD2F236C0A2200A2AB9B /* PBXTargetDependency */,
+				78FB286E236C10D6001756C9 /* PBXTargetDependency */,
 			);
 			name = DCTemplatesUI;
 			productName = DCTemplatesUI;
@@ -596,10 +628,13 @@
 				78B088DA2367FA8F002CD587 /* Sources */,
 				78B088DB2367FA8F002CD587 /* Frameworks */,
 				78B088DC2367FA8F002CD587 /* Resources */,
+				78FB287A236C1144001756C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				78FB2876236C1110001756C9 /* PBXTargetDependency */,
+				78FB287E236C1168001756C9 /* PBXTargetDependency */,
 			);
 			name = DCLog;
 			productName = DCLog;
@@ -820,11 +855,6 @@
 			target = 788BDD10236C096200A2AB9B /* DCTemplatesUI */;
 			targetProxy = 788BDD16236C096200A2AB9B /* PBXContainerItemProxy */;
 		};
-		788BDD2F236C0A2200A2AB9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 788BDCFF236C095900A2AB9B /* DCTemplates */;
-			targetProxy = 788BDD2E236C0A2200A2AB9B /* PBXContainerItemProxy */;
-		};
 		788BDD34236C0A5D00A2AB9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 788BDCFF236C095900A2AB9B /* DCTemplates */;
@@ -849,6 +879,21 @@
 			isa = PBXTargetDependency;
 			target = 78D0D3CE236C0D0600079E0C /* DCCommon */;
 			targetProxy = 78D0D3D4236C0D0600079E0C /* PBXContainerItemProxy */;
+		};
+		78FB286E236C10D6001756C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 788BDCFF236C095900A2AB9B /* DCTemplates */;
+			targetProxy = 78FB286D236C10D6001756C9 /* PBXContainerItemProxy */;
+		};
+		78FB2876236C1110001756C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 788BDCFF236C095900A2AB9B /* DCTemplates */;
+			targetProxy = 78FB2875236C1110001756C9 /* PBXContainerItemProxy */;
+		};
+		78FB287E236C1168001756C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78D0D3CE236C0D0600079E0C /* DCCommon */;
+			targetProxy = 78FB287D236C1168001756C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1251,6 +1296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1264,6 +1310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1279,6 +1326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1292,6 +1340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
