@@ -3,11 +3,11 @@
 //
 
 import Foundation
-import DCCommonUI
-import DCCommon
+import DCTemplates
+import DCTemplatesUI
 
 extension Main.UI.Service {
-    public class Second: NSObject, Common.UI.Service.ObjectProtocol {
+    public class Second: Templates.UI.Service.Object {
         public var object: Main.UI.Model.Row?
     }
 }

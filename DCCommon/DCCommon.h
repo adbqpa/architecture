@@ -1,5 +1,9 @@
 //
-//  dclife
+//  DCCommon.h
+//  DCCommon
+//
+//  Created by Igor Danich on 01.11.2019.
+//  Copyright © 2019 Igor Danich. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -3,21 +3,21 @@
 //
 
 import UIKit
-import DCCommon
+import DCTemplates
 
-public protocol CommonUIViewProtocol: CommonUIComponentProtocol {}
+public protocol TemplatesUIViewProtocol: TemplatesUIComponentProtocol {}
 
-public protocol CommonUICellProtocol: CommonUIViewProtocol {
+public protocol TemplatesUICellProtocol: TemplatesUIViewProtocol {
     associatedtype Object
     func adjust(to object: Object)
 }
 
-extension Common.UI.View {
-    public typealias ViewProtocol = CommonUIViewProtocol
+extension Templates.UI.View {
+    public typealias ViewProtocol = TemplatesUIViewProtocol
     public typealias View = (UIView & ViewProtocol)
     public typealias Control = (UIControl & ViewProtocol)
     public enum Cell {
-        public typealias CellProtocol = CommonUICellProtocol
+        public typealias CellProtocol = TemplatesUICellProtocol
         public typealias Collection = (UICollectionViewCell & CellProtocol)
         public typealias Table = (UITableViewCell & CellProtocol)
     }

@@ -3,13 +3,13 @@
 //
 
 import UIKit
-import DCCommon
-import DCCommonUI
+import DCTemplates
+import DCTemplatesUI
 
 extension Main.UI.Flow {
-    public class Initial: Common.UI.Flow.Navigation {
+    public class Initial: Templates.UI.Flow.Navigation {
         
-        public var parent: Common.UI.Flow.ObjectProtocol?
+        public var parent: Templates.UI.Flow.ObjectProtocol?
         
         public lazy var navigationController: UINavigationController? = {
             return Initial.storyboard.instantiateInitialViewController() as? UINavigationController

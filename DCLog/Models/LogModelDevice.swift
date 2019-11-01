@@ -3,10 +3,10 @@
 //
 
 import Foundation
-import DCCommon
+import DCTemplates
 
 extension Log.Model {
-    public struct Device: Common.Model.ObjectProtocol {
+    public struct Device: Templates.Model.ObjectProtocol {
         public let uuid: String
         public let name: String
         public let iOSVersion: String

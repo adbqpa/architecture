@@ -3,14 +3,14 @@
 //
 
 import UIKit
-import DCCommonUI
-import DCCommon
+import DCTemplates
+import DCTemplatesUI
 
-public class DCMainUIViewController: UIViewController, Common.UI.Controller.ObjectProtocol {
+public class DCMainUIViewController: Templates.UI.Controller.Object {
     
     // MARK: - Common.UI.Controller
     
-    public weak var flow: Common.UI.Flow.ObjectProtocol!
+    public weak var flow: Templates.UI.Flow.ObjectProtocol!
     public static var storyboardIdentifier = "first"
     private let service = Main.UI.Service.First()
     

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		781F28A8236B4CFB00D8639D /* DCCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65CA2366C9810060A1BE /* DCCommon.framework */; };
-		781F28AE236B4E9D00D8639D /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F28AD236B4E9D00D8639D /* Context.swift */; };
 		787626312366CC64001B4F0D /* DCMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787626262366CC64001B4F0D /* DCMain.swift */; };
 		787626322366CC64001B4F0D /* MainUIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787626282366CC64001B4F0D /* MainUIService.swift */; };
 		787626332366CC64001B4F0D /* MainUIServiceSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787626292366CC64001B4F0D /* MainUIServiceSecond.swift */; };
@@ -17,18 +15,30 @@
 		787626362366CC64001B4F0D /* DCMainUISecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876262F2366CC64001B4F0D /* DCMainUISecondViewController.swift */; };
 		787626372366CC64001B4F0D /* DCMainUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787626302366CC64001B4F0D /* DCMainUIViewController.swift */; };
 		787626392366CC85001B4F0D /* DCMainUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787626382366CC85001B4F0D /* DCMainUI.storyboard */; };
-		7892F8F42369D6C800300812 /* Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8F32369D6C800300812 /* Templates.swift */; };
-		7892F8F82369D72200300812 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8F72369D72200300812 /* Component.swift */; };
-		7892F8FC2369D7D500300812 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8FB2369D7D500300812 /* Model.swift */; };
-		7892F8FE2369D82B00300812 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8FD2369D82B00300812 /* Service.swift */; };
-		7892F9002369D85A00300812 /* Durable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8FF2369D85A00300812 /* Durable.swift */; };
-		7892F9022369D89E00300812 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F9012369D89E00300812 /* Factory.swift */; };
-		7892F9052369D8E700300812 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F9042369D8E700300812 /* Component.swift */; };
-		7892F9072369D93400300812 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F9062369D93400300812 /* Flow.swift */; };
-		7892F9092369DAD500300812 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F9082369DAD500300812 /* Model.swift */; };
-		7892F90B2369DD2E00300812 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F90A2369DD2E00300812 /* View.swift */; };
-		7892F90D2369DD5B00300812 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F90C2369DD5B00300812 /* Service.swift */; };
-		7892F90F2369DF8200300812 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F90E2369DF8200300812 /* Controller.swift */; };
+		788BDD04236C095900A2AB9B /* DCTemplates.h in Headers */ = {isa = PBXBuildFile; fileRef = 788BDD02236C095900A2AB9B /* DCTemplates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		788BDD07236C095900A2AB9B /* DCTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; };
+		788BDD08236C095900A2AB9B /* DCTemplates.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		788BDD15236C096200A2AB9B /* DCTemplatesUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 788BDD13236C096200A2AB9B /* DCTemplatesUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		788BDD18236C096200A2AB9B /* DCTemplatesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD11236C096200A2AB9B /* DCTemplatesUI.framework */; };
+		788BDD19236C096200A2AB9B /* DCTemplatesUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD11236C096200A2AB9B /* DCTemplatesUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		788BDD1D236C097100A2AB9B /* DCTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BDCE8236C05BE00A2AB9B /* DCTemplates.swift */; };
+		788BDD1E236C098500A2AB9B /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8F72369D72200300812 /* Component.swift */; };
+		788BDD1F236C098500A2AB9B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8FB2369D7D500300812 /* Model.swift */; };
+		788BDD20236C098500A2AB9B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8FD2369D82B00300812 /* Service.swift */; };
+		788BDD21236C098500A2AB9B /* Durable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F8FF2369D85A00300812 /* Durable.swift */; };
+		788BDD22236C098500A2AB9B /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F9012369D89E00300812 /* Factory.swift */; };
+		788BDD23236C098500A2AB9B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F28AD236B4E9D00D8639D /* Context.swift */; };
+		788BDD24236C099800A2AB9B /* DCTemplatesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BDCF2236C076F00A2AB9B /* DCTemplatesUI.swift */; };
+		788BDD25236C09AD00A2AB9B /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F9042369D8E700300812 /* Component.swift */; };
+		788BDD26236C09AD00A2AB9B /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F9062369D93400300812 /* Flow.swift */; };
+		788BDD27236C09AD00A2AB9B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F9082369DAD500300812 /* Model.swift */; };
+		788BDD28236C09AD00A2AB9B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F90C2369DD5B00300812 /* Service.swift */; };
+		788BDD29236C09AD00A2AB9B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F90A2369DD2E00300812 /* View.swift */; };
+		788BDD2A236C09AD00A2AB9B /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892F90E2369DF8200300812 /* Controller.swift */; };
+		788BDD2B236C09AD00A2AB9B /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BDCBF236BC55200A2AB9B /* Factory.swift */; };
+		788BDD2C236C0A2200A2AB9B /* DCTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; };
+		788BDD31236C0A5D00A2AB9B /* DCTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD00236C095900A2AB9B /* DCTemplates.framework */; };
+		788BDD36236C0A5F00A2AB9B /* DCTemplatesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BDD11236C096200A2AB9B /* DCTemplatesUI.framework */; };
 		78AF65352366C7AF0060A1BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF65342366C7AF0060A1BE /* AppDelegate.swift */; };
 		78AF65392366C7AF0060A1BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF65382366C7AF0060A1BE /* ViewController.swift */; };
 		78AF653C2366C7AF0060A1BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AF653A2366C7AF0060A1BE /* Main.storyboard */; };
@@ -37,17 +47,6 @@
 		78AF65AC2366C9730060A1BE /* DCMainUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AF65AA2366C9730060A1BE /* DCMainUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78AF65AF2366C9730060A1BE /* DCMainUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65A82366C9730060A1BE /* DCMainUI.framework */; };
 		78AF65B02366C9730060A1BE /* DCMainUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65A82366C9730060A1BE /* DCMainUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		78AF65BD2366C97B0060A1BE /* DCCommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AF65BB2366C97B0060A1BE /* DCCommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78AF65C02366C97B0060A1BE /* DCCommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65B92366C97B0060A1BE /* DCCommonUI.framework */; };
-		78AF65C12366C97B0060A1BE /* DCCommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65B92366C97B0060A1BE /* DCCommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		78AF65CE2366C9810060A1BE /* DCCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AF65CC2366C9810060A1BE /* DCCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78AF65D12366C9810060A1BE /* DCCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65CA2366C9810060A1BE /* DCCommon.framework */; };
-		78AF65D22366C9810060A1BE /* DCCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65CA2366C9810060A1BE /* DCCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		78AF65D62366C99E0060A1BE /* DCCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65CA2366C9810060A1BE /* DCCommon.framework */; };
-		78AF65DB2366C9A10060A1BE /* DCCommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65B92366C97B0060A1BE /* DCCommonUI.framework */; };
-		78AF65E02366C9A30060A1BE /* DCCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AF65CA2366C9810060A1BE /* DCCommon.framework */; };
-		78AF65E52366C9C50060A1BE /* DCCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF65E42366C9C50060A1BE /* DCCommon.swift */; };
-		78AF65E72366C9CE0060A1BE /* DCCommonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF65E62366C9CE0060A1BE /* DCCommonUI.swift */; };
 		78B088E22367FA8F002CD587 /* DCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 78B088E02367FA8F002CD587 /* DCLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78B088E52367FA8F002CD587 /* DCLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B088DE2367FA8F002CD587 /* DCLog.framework */; };
 		78B088E62367FA8F002CD587 /* DCLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78B088DE2367FA8F002CD587 /* DCLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -57,20 +56,51 @@
 		78B088F72367FAB8002CD587 /* LogServiceConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088F02367FAB8002CD587 /* LogServiceConsole.swift */; };
 		78B088F82367FAB8002CD587 /* LogModelEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088F22367FAB8002CD587 /* LogModelEvent.swift */; };
 		78B088F92367FAB8002CD587 /* LogModelDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088F32367FAB8002CD587 /* LogModelDevice.swift */; };
-		78B088FD2367FB0A002CD587 /* RunLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088FB2367FB0A002CD587 /* RunLoop.swift */; };
-		78B088FE2367FB0A002CD587 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088FC2367FB0A002CD587 /* String.swift */; };
 		78B0890023681490002CD587 /* LogStreamFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B088FF23681490002CD587 /* LogStreamFile.swift */; };
 		78B0890223681541002CD587 /* LogDurableWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B0890123681541002CD587 /* LogDurableWriter.swift */; };
 		78B08904236815BC002CD587 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B08903236815BC002CD587 /* Loggable.swift */; };
+		78D0D3D6236C0D0600079E0C /* DCCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D0D3CF236C0D0600079E0C /* DCCommon.framework */; };
+		78D0D3D7236C0D0600079E0C /* DCCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78D0D3CF236C0D0600079E0C /* DCCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78D0D3DC236C0D2500079E0C /* DCCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D0D3DB236C0D2500079E0C /* DCCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78D0D3DF236C0D3B00079E0C /* RunLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0D3DE236C0D3B00079E0C /* RunLoop.swift */; };
+		78D0D3E1236C0D5800079E0C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0D3E0236C0D5800079E0C /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		781F28AA236B4CFB00D8639D /* PBXContainerItemProxy */ = {
+		788BDD05236C095900A2AB9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 78AF65C92366C9810060A1BE;
-			remoteInfo = DCCommon;
+			remoteGlobalIDString = 788BDCFF236C095900A2AB9B;
+			remoteInfo = DCTemplates;
+		};
+		788BDD16236C096200A2AB9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788BDD10236C096200A2AB9B;
+			remoteInfo = DCTemplatesUI;
+		};
+		788BDD2E236C0A2200A2AB9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788BDCFF236C095900A2AB9B;
+			remoteInfo = DCTemplates;
+		};
+		788BDD33236C0A5D00A2AB9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788BDCFF236C095900A2AB9B;
+			remoteInfo = DCTemplates;
+		};
+		788BDD38236C0A5F00A2AB9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788BDD10236C096200A2AB9B;
+			remoteInfo = DCTemplatesUI;
 		};
 		78AF65AD2366C9730060A1BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -79,47 +109,19 @@
 			remoteGlobalIDString = 78AF65A72366C9730060A1BE;
 			remoteInfo = DCMainUI;
 		};
-		78AF65BE2366C97B0060A1BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78AF65B82366C97B0060A1BE;
-			remoteInfo = DCCommonUI;
-		};
-		78AF65CF2366C9810060A1BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78AF65C92366C9810060A1BE;
-			remoteInfo = DCCommon;
-		};
-		78AF65D82366C99E0060A1BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78AF65C92366C9810060A1BE;
-			remoteInfo = DCCommon;
-		};
-		78AF65DD2366C9A10060A1BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78AF65B82366C97B0060A1BE;
-			remoteInfo = DCCommonUI;
-		};
-		78AF65E22366C9A30060A1BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78AF65C92366C9810060A1BE;
-			remoteInfo = DCCommon;
-		};
 		78B088E32367FA8F002CD587 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 78B088DD2367FA8F002CD587;
 			remoteInfo = DCLog;
+		};
+		78D0D3D4236C0D0600079E0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AF65292366C7AF0060A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D0D3CE236C0D0600079E0C;
+			remoteInfo = DCCommon;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -130,10 +132,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				78D0D3D7236C0D0600079E0C /* DCCommon.framework in Embed Frameworks */,
+				788BDD08236C095900A2AB9B /* DCTemplates.framework in Embed Frameworks */,
 				78B088E62367FA8F002CD587 /* DCLog.framework in Embed Frameworks */,
-				78AF65D22366C9810060A1BE /* DCCommon.framework in Embed Frameworks */,
-				78AF65C12366C97B0060A1BE /* DCCommonUI.framework in Embed Frameworks */,
 				78AF65B02366C9730060A1BE /* DCMainUI.framework in Embed Frameworks */,
+				788BDD19236C096200A2AB9B /* DCTemplatesUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,7 +153,15 @@
 		7876262F2366CC64001B4F0D /* DCMainUISecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCMainUISecondViewController.swift; sourceTree = "<group>"; };
 		787626302366CC64001B4F0D /* DCMainUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCMainUIViewController.swift; sourceTree = "<group>"; };
 		787626382366CC85001B4F0D /* DCMainUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DCMainUI.storyboard; sourceTree = "<group>"; };
-		7892F8F32369D6C800300812 /* Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Templates.swift; sourceTree = "<group>"; };
+		788BDCBF236BC55200A2AB9B /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		788BDCE8236C05BE00A2AB9B /* DCTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTemplates.swift; sourceTree = "<group>"; };
+		788BDCF2236C076F00A2AB9B /* DCTemplatesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTemplatesUI.swift; sourceTree = "<group>"; };
+		788BDD00236C095900A2AB9B /* DCTemplates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCTemplates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		788BDD02236C095900A2AB9B /* DCTemplates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTemplates.h; sourceTree = "<group>"; };
+		788BDD03236C095900A2AB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788BDD11236C096200A2AB9B /* DCTemplatesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCTemplatesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		788BDD13236C096200A2AB9B /* DCTemplatesUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTemplatesUI.h; sourceTree = "<group>"; };
+		788BDD14236C096200A2AB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7892F8F72369D72200300812 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		7892F8FB2369D7D500300812 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7892F8FD2369D82B00300812 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -172,14 +183,6 @@
 		78AF65A82366C9730060A1BE /* DCMainUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCMainUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AF65AA2366C9730060A1BE /* DCMainUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCMainUI.h; sourceTree = "<group>"; };
 		78AF65AB2366C9730060A1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78AF65B92366C97B0060A1BE /* DCCommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCCommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78AF65BB2366C97B0060A1BE /* DCCommonUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCommonUI.h; sourceTree = "<group>"; };
-		78AF65BC2366C97B0060A1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78AF65CA2366C9810060A1BE /* DCCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78AF65CC2366C9810060A1BE /* DCCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCommon.h; sourceTree = "<group>"; };
-		78AF65CD2366C9810060A1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78AF65E42366C9C50060A1BE /* DCCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCommon.swift; sourceTree = "<group>"; };
-		78AF65E62366C9CE0060A1BE /* DCCommonUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCommonUI.swift; sourceTree = "<group>"; };
 		78B088DE2367FA8F002CD587 /* DCLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B088E02367FA8F002CD587 /* DCLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLog.h; sourceTree = "<group>"; };
 		78B088E12367FA8F002CD587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,22 +192,41 @@
 		78B088F02367FAB8002CD587 /* LogServiceConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogServiceConsole.swift; sourceTree = "<group>"; };
 		78B088F22367FAB8002CD587 /* LogModelEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogModelEvent.swift; sourceTree = "<group>"; };
 		78B088F32367FAB8002CD587 /* LogModelDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogModelDevice.swift; sourceTree = "<group>"; };
-		78B088FB2367FB0A002CD587 /* RunLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLoop.swift; sourceTree = "<group>"; };
-		78B088FC2367FB0A002CD587 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		78B088FF23681490002CD587 /* LogStreamFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogStreamFile.swift; sourceTree = "<group>"; };
 		78B0890123681541002CD587 /* LogDurableWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDurableWriter.swift; sourceTree = "<group>"; };
 		78B08903236815BC002CD587 /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
+		78D0D3CF236C0D0600079E0C /* DCCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D0D3D2236C0D0600079E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D0D3DB236C0D2500079E0C /* DCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCommon.h; sourceTree = "<group>"; };
+		78D0D3DE236C0D3B00079E0C /* RunLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoop.swift; sourceTree = "<group>"; };
+		78D0D3E0236C0D5800079E0C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		788BDCFD236C095900A2AB9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788BDD0E236C096200A2AB9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788BDD2C236C0A2200A2AB9B /* DCTemplates.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78AF652E2366C7AF0060A1BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D0D3D6236C0D0600079E0C /* DCCommon.framework in Frameworks */,
+				788BDD07236C095900A2AB9B /* DCTemplates.framework in Frameworks */,
 				78B088E52367FA8F002CD587 /* DCLog.framework in Frameworks */,
-				78AF65D12366C9810060A1BE /* DCCommon.framework in Frameworks */,
-				78AF65C02366C97B0060A1BE /* DCCommonUI.framework in Frameworks */,
 				78AF65AF2366C9730060A1BE /* DCMainUI.framework in Frameworks */,
+				788BDD18236C096200A2AB9B /* DCTemplatesUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,23 +234,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78AF65E02366C9A30060A1BE /* DCCommon.framework in Frameworks */,
-				78AF65DB2366C9A10060A1BE /* DCCommonUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78AF65B62366C97B0060A1BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78AF65D62366C99E0060A1BE /* DCCommon.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78AF65C72366C9810060A1BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				788BDD31236C0A5D00A2AB9B /* DCTemplates.framework in Frameworks */,
+				788BDD36236C0A5F00A2AB9B /* DCTemplatesUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +243,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				781F28A8236B4CFB00D8639D /* DCCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D0D3CC236C0D0600079E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +290,7 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		7892F8F52369D70600300812 /* Templates */ = {
+		788BDCF0236C05D200A2AB9B /* Templates */ = {
 			isa = PBXGroup;
 			children = (
 				7892F8F72369D72200300812 /* Component.swift */,
@@ -290,7 +303,7 @@
 			path = Templates;
 			sourceTree = "<group>";
 		};
-		7892F9032369D8DA00300812 /* Templates */ = {
+		788BDCF1236C074400A2AB9B /* Templates */ = {
 			isa = PBXGroup;
 			children = (
 				7892F9042369D8E700300812 /* Component.swift */,
@@ -299,8 +312,31 @@
 				7892F90C2369DD5B00300812 /* Service.swift */,
 				7892F90A2369DD2E00300812 /* View.swift */,
 				7892F90E2369DF8200300812 /* Controller.swift */,
+				788BDCBF236BC55200A2AB9B /* Factory.swift */,
 			);
 			path = Templates;
+			sourceTree = "<group>";
+		};
+		788BDD01236C095900A2AB9B /* DCTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				788BDD02236C095900A2AB9B /* DCTemplates.h */,
+				788BDD03236C095900A2AB9B /* Info.plist */,
+				788BDCE8236C05BE00A2AB9B /* DCTemplates.swift */,
+				788BDCF0236C05D200A2AB9B /* Templates */,
+			);
+			path = DCTemplates;
+			sourceTree = "<group>";
+		};
+		788BDD12236C096200A2AB9B /* DCTemplatesUI */ = {
+			isa = PBXGroup;
+			children = (
+				788BDD13236C096200A2AB9B /* DCTemplatesUI.h */,
+				788BDD14236C096200A2AB9B /* Info.plist */,
+				788BDCF2236C076F00A2AB9B /* DCTemplatesUI.swift */,
+				788BDCF1236C074400A2AB9B /* Templates */,
+			);
+			path = DCTemplatesUI;
 			sourceTree = "<group>";
 		};
 		78AF65282366C7AF0060A1BE = {
@@ -308,9 +344,10 @@
 			children = (
 				78AF65332366C7AF0060A1BE /* dclife */,
 				78AF65A92366C9730060A1BE /* DCMainUI */,
-				78AF65BA2366C97B0060A1BE /* DCCommonUI */,
 				78B088DF2367FA8F002CD587 /* DCLog */,
-				78AF65CB2366C9810060A1BE /* DCCommon */,
+				78D0D3D0236C0D0600079E0C /* DCCommon */,
+				788BDD12236C096200A2AB9B /* DCTemplatesUI */,
+				788BDD01236C095900A2AB9B /* DCTemplates */,
 				78AF65322366C7AF0060A1BE /* Products */,
 				78AF65942366C8380060A1BE /* Frameworks */,
 			);
@@ -321,9 +358,10 @@
 			children = (
 				78AF65312366C7AF0060A1BE /* dclife.app */,
 				78AF65A82366C9730060A1BE /* DCMainUI.framework */,
-				78AF65B92366C97B0060A1BE /* DCCommonUI.framework */,
-				78AF65CA2366C9810060A1BE /* DCCommon.framework */,
 				78B088DE2367FA8F002CD587 /* DCLog.framework */,
+				788BDD00236C095900A2AB9B /* DCTemplates.framework */,
+				788BDD11236C096200A2AB9B /* DCTemplatesUI.framework */,
+				78D0D3CF236C0D0600079E0C /* DCCommon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -361,30 +399,6 @@
 				7876262E2366CC64001B4F0D /* Controllers */,
 			);
 			path = DCMainUI;
-			sourceTree = "<group>";
-		};
-		78AF65BA2366C97B0060A1BE /* DCCommonUI */ = {
-			isa = PBXGroup;
-			children = (
-				78AF65BB2366C97B0060A1BE /* DCCommonUI.h */,
-				78AF65BC2366C97B0060A1BE /* Info.plist */,
-				78AF65E62366C9CE0060A1BE /* DCCommonUI.swift */,
-				7892F8F32369D6C800300812 /* Templates.swift */,
-				7892F9032369D8DA00300812 /* Templates */,
-			);
-			path = DCCommonUI;
-			sourceTree = "<group>";
-		};
-		78AF65CB2366C9810060A1BE /* DCCommon */ = {
-			isa = PBXGroup;
-			children = (
-				78AF65CC2366C9810060A1BE /* DCCommon.h */,
-				78AF65CD2366C9810060A1BE /* Info.plist */,
-				78AF65E42366C9C50060A1BE /* DCCommon.swift */,
-				7892F8F52369D70600300812 /* Templates */,
-				78B088FA2367FB0A002CD587 /* Extensions */,
-			);
-			path = DCCommon;
 			sourceTree = "<group>";
 		};
 		78B088DF2367FA8F002CD587 /* DCLog */ = {
@@ -429,40 +443,49 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		78B088FA2367FB0A002CD587 /* Extensions */ = {
+		78D0D3D0236C0D0600079E0C /* DCCommon */ = {
 			isa = PBXGroup;
 			children = (
-				78B088FB2367FB0A002CD587 /* RunLoop.swift */,
-				78B088FC2367FB0A002CD587 /* String.swift */,
+				78D0D3DB236C0D2500079E0C /* DCCommon.h */,
+				78D0D3D2236C0D0600079E0C /* Info.plist */,
+				78D0D3DD236C0D2900079E0C /* Extension */,
 			);
-			name = Extensions;
-			path = ../../../DefTalk/dtios/DTCommon/Extensions;
+			path = DCCommon;
+			sourceTree = "<group>";
+		};
+		78D0D3DD236C0D2900079E0C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				78D0D3DE236C0D3B00079E0C /* RunLoop.swift */,
+				78D0D3E0236C0D5800079E0C /* String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		788BDCFB236C095900A2AB9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788BDD04236C095900A2AB9B /* DCTemplates.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788BDD0C236C096200A2AB9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788BDD15236C096200A2AB9B /* DCTemplatesUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78AF65A32366C9730060A1BE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				78AF65AC2366C9730060A1BE /* DCMainUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78AF65B42366C97B0060A1BE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78AF65BD2366C97B0060A1BE /* DCCommonUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78AF65C52366C9810060A1BE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78AF65CE2366C9810060A1BE /* DCCommon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,9 +497,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78D0D3CA236C0D0600079E0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D0D3DC236C0D2500079E0C /* DCCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		788BDCFF236C095900A2AB9B /* DCTemplates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 788BDD09236C095900A2AB9B /* Build configuration list for PBXNativeTarget "DCTemplates" */;
+			buildPhases = (
+				788BDCFB236C095900A2AB9B /* Headers */,
+				788BDCFC236C095900A2AB9B /* Sources */,
+				788BDCFD236C095900A2AB9B /* Frameworks */,
+				788BDCFE236C095900A2AB9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCTemplates;
+			productName = DCTemplates;
+			productReference = 788BDD00236C095900A2AB9B /* DCTemplates.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		788BDD10236C096200A2AB9B /* DCTemplatesUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 788BDD1A236C096200A2AB9B /* Build configuration list for PBXNativeTarget "DCTemplatesUI" */;
+			buildPhases = (
+				788BDD0C236C096200A2AB9B /* Headers */,
+				788BDD0D236C096200A2AB9B /* Sources */,
+				788BDD0E236C096200A2AB9B /* Frameworks */,
+				788BDD0F236C096200A2AB9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				788BDD2F236C0A2200A2AB9B /* PBXTargetDependency */,
+			);
+			name = DCTemplatesUI;
+			productName = DCTemplatesUI;
+			productReference = 788BDD11236C096200A2AB9B /* DCTemplatesUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		78AF65302366C7AF0060A1BE /* dclife */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AF65452366C7B00060A1BE /* Build configuration list for PBXNativeTarget "dclife" */;
@@ -490,9 +558,10 @@
 			);
 			dependencies = (
 				78AF65AE2366C9730060A1BE /* PBXTargetDependency */,
-				78AF65BF2366C97B0060A1BE /* PBXTargetDependency */,
-				78AF65D02366C9810060A1BE /* PBXTargetDependency */,
 				78B088E42367FA8F002CD587 /* PBXTargetDependency */,
+				788BDD06236C095900A2AB9B /* PBXTargetDependency */,
+				788BDD17236C096200A2AB9B /* PBXTargetDependency */,
+				78D0D3D5236C0D0600079E0C /* PBXTargetDependency */,
 			);
 			name = dclife;
 			productName = dclife;
@@ -511,49 +580,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				78AF65DE2366C9A10060A1BE /* PBXTargetDependency */,
-				78AF65E32366C9A30060A1BE /* PBXTargetDependency */,
+				788BDD34236C0A5D00A2AB9B /* PBXTargetDependency */,
+				788BDD39236C0A5F00A2AB9B /* PBXTargetDependency */,
 			);
 			name = DCMainUI;
 			productName = DCMainUI;
 			productReference = 78AF65A82366C9730060A1BE /* DCMainUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		78AF65B82366C97B0060A1BE /* DCCommonUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78AF65C22366C97B0060A1BE /* Build configuration list for PBXNativeTarget "DCCommonUI" */;
-			buildPhases = (
-				78AF65B42366C97B0060A1BE /* Headers */,
-				78AF65B52366C97B0060A1BE /* Sources */,
-				78AF65B62366C97B0060A1BE /* Frameworks */,
-				78AF65B72366C97B0060A1BE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78AF65D92366C99E0060A1BE /* PBXTargetDependency */,
-			);
-			name = DCCommonUI;
-			productName = DCCommonUI;
-			productReference = 78AF65B92366C97B0060A1BE /* DCCommonUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		78AF65C92366C9810060A1BE /* DCCommon */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78AF65D32366C9810060A1BE /* Build configuration list for PBXNativeTarget "DCCommon" */;
-			buildPhases = (
-				78AF65C52366C9810060A1BE /* Headers */,
-				78AF65C62366C9810060A1BE /* Sources */,
-				78AF65C72366C9810060A1BE /* Frameworks */,
-				78AF65C82366C9810060A1BE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DCCommon;
-			productName = DCCommon;
-			productReference = 78AF65CA2366C9810060A1BE /* DCCommon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		78B088DD2367FA8F002CD587 /* DCLog */ = {
@@ -568,11 +600,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				781F28AB236B4CFB00D8639D /* PBXTargetDependency */,
 			);
 			name = DCLog;
 			productName = DCLog;
 			productReference = 78B088DE2367FA8F002CD587 /* DCLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78D0D3CE236C0D0600079E0C /* DCCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D0D3DA236C0D0600079E0C /* Build configuration list for PBXNativeTarget "DCCommon" */;
+			buildPhases = (
+				78D0D3CA236C0D0600079E0C /* Headers */,
+				78D0D3CB236C0D0600079E0C /* Sources */,
+				78D0D3CC236C0D0600079E0C /* Frameworks */,
+				78D0D3CD236C0D0600079E0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCCommon;
+			productName = DCCommon;
+			productReference = 78D0D3CF236C0D0600079E0C /* DCCommon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -585,6 +634,12 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Igor Danich";
 				TargetAttributes = {
+					788BDCFF236C095900A2AB9B = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					788BDD10236C096200A2AB9B = {
+						CreatedOnToolsVersion = 11.1;
+					};
 					78AF65302366C7AF0060A1BE = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -592,15 +647,11 @@
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
 					};
-					78AF65B82366C97B0060A1BE = {
-						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1110;
-					};
-					78AF65C92366C9810060A1BE = {
-						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1110;
-					};
 					78B088DD2367FA8F002CD587 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					78D0D3CE236C0D0600079E0C = {
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
 					};
@@ -621,14 +672,29 @@
 			targets = (
 				78AF65302366C7AF0060A1BE /* dclife */,
 				78AF65A72366C9730060A1BE /* DCMainUI */,
-				78AF65B82366C97B0060A1BE /* DCCommonUI */,
 				78B088DD2367FA8F002CD587 /* DCLog */,
-				78AF65C92366C9810060A1BE /* DCCommon */,
+				78D0D3CE236C0D0600079E0C /* DCCommon */,
+				788BDD10236C096200A2AB9B /* DCTemplatesUI */,
+				788BDCFF236C095900A2AB9B /* DCTemplates */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		788BDCFE236C095900A2AB9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788BDD0F236C096200A2AB9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78AF652F2366C7AF0060A1BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -647,21 +713,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78AF65B72366C97B0060A1BE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78AF65C82366C9810060A1BE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		78B088DC2367FA8F002CD587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D0D3CD236C0D0600079E0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -671,6 +730,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		788BDCFC236C095900A2AB9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788BDD1F236C098500A2AB9B /* Model.swift in Sources */,
+				788BDD20236C098500A2AB9B /* Service.swift in Sources */,
+				788BDD22236C098500A2AB9B /* Factory.swift in Sources */,
+				788BDD23236C098500A2AB9B /* Context.swift in Sources */,
+				788BDD1D236C097100A2AB9B /* DCTemplates.swift in Sources */,
+				788BDD21236C098500A2AB9B /* Durable.swift in Sources */,
+				788BDD1E236C098500A2AB9B /* Component.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788BDD0D236C096200A2AB9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788BDD2B236C09AD00A2AB9B /* Factory.swift in Sources */,
+				788BDD26236C09AD00A2AB9B /* Flow.swift in Sources */,
+				788BDD24236C099800A2AB9B /* DCTemplatesUI.swift in Sources */,
+				788BDD29236C09AD00A2AB9B /* View.swift in Sources */,
+				788BDD28236C09AD00A2AB9B /* Service.swift in Sources */,
+				788BDD25236C09AD00A2AB9B /* Component.swift in Sources */,
+				788BDD27236C09AD00A2AB9B /* Model.swift in Sources */,
+				788BDD2A236C09AD00A2AB9B /* Controller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78AF652D2366C7AF0060A1BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -694,37 +782,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78AF65B52366C97B0060A1BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7892F9072369D93400300812 /* Flow.swift in Sources */,
-				78AF65E72366C9CE0060A1BE /* DCCommonUI.swift in Sources */,
-				7892F8F42369D6C800300812 /* Templates.swift in Sources */,
-				7892F90B2369DD2E00300812 /* View.swift in Sources */,
-				7892F9092369DAD500300812 /* Model.swift in Sources */,
-				7892F90F2369DF8200300812 /* Controller.swift in Sources */,
-				7892F90D2369DD5B00300812 /* Service.swift in Sources */,
-				7892F9052369D8E700300812 /* Component.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78AF65C62366C9810060A1BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78B088FE2367FB0A002CD587 /* String.swift in Sources */,
-				7892F8FC2369D7D500300812 /* Model.swift in Sources */,
-				78AF65E52366C9C50060A1BE /* DCCommon.swift in Sources */,
-				78B088FD2367FB0A002CD587 /* RunLoop.swift in Sources */,
-				7892F9022369D89E00300812 /* Factory.swift in Sources */,
-				7892F8F82369D72200300812 /* Component.swift in Sources */,
-				781F28AE236B4E9D00D8639D /* Context.swift in Sources */,
-				7892F9002369D85A00300812 /* Durable.swift in Sources */,
-				7892F8FE2369D82B00300812 /* Service.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		78B088DA2367FA8F002CD587 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -741,48 +798,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78D0D3CB236C0D0600079E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D0D3E1236C0D5800079E0C /* String.swift in Sources */,
+				78D0D3DF236C0D3B00079E0C /* RunLoop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		781F28AB236B4CFB00D8639D /* PBXTargetDependency */ = {
+		788BDD06236C095900A2AB9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 78AF65C92366C9810060A1BE /* DCCommon */;
-			targetProxy = 781F28AA236B4CFB00D8639D /* PBXContainerItemProxy */;
+			target = 788BDCFF236C095900A2AB9B /* DCTemplates */;
+			targetProxy = 788BDD05236C095900A2AB9B /* PBXContainerItemProxy */;
+		};
+		788BDD17236C096200A2AB9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 788BDD10236C096200A2AB9B /* DCTemplatesUI */;
+			targetProxy = 788BDD16236C096200A2AB9B /* PBXContainerItemProxy */;
+		};
+		788BDD2F236C0A2200A2AB9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 788BDCFF236C095900A2AB9B /* DCTemplates */;
+			targetProxy = 788BDD2E236C0A2200A2AB9B /* PBXContainerItemProxy */;
+		};
+		788BDD34236C0A5D00A2AB9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 788BDCFF236C095900A2AB9B /* DCTemplates */;
+			targetProxy = 788BDD33236C0A5D00A2AB9B /* PBXContainerItemProxy */;
+		};
+		788BDD39236C0A5F00A2AB9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 788BDD10236C096200A2AB9B /* DCTemplatesUI */;
+			targetProxy = 788BDD38236C0A5F00A2AB9B /* PBXContainerItemProxy */;
 		};
 		78AF65AE2366C9730060A1BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 78AF65A72366C9730060A1BE /* DCMainUI */;
 			targetProxy = 78AF65AD2366C9730060A1BE /* PBXContainerItemProxy */;
 		};
-		78AF65BF2366C97B0060A1BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78AF65B82366C97B0060A1BE /* DCCommonUI */;
-			targetProxy = 78AF65BE2366C97B0060A1BE /* PBXContainerItemProxy */;
-		};
-		78AF65D02366C9810060A1BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78AF65C92366C9810060A1BE /* DCCommon */;
-			targetProxy = 78AF65CF2366C9810060A1BE /* PBXContainerItemProxy */;
-		};
-		78AF65D92366C99E0060A1BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78AF65C92366C9810060A1BE /* DCCommon */;
-			targetProxy = 78AF65D82366C99E0060A1BE /* PBXContainerItemProxy */;
-		};
-		78AF65DE2366C9A10060A1BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78AF65B82366C97B0060A1BE /* DCCommonUI */;
-			targetProxy = 78AF65DD2366C9A10060A1BE /* PBXContainerItemProxy */;
-		};
-		78AF65E32366C9A30060A1BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78AF65C92366C9810060A1BE /* DCCommon */;
-			targetProxy = 78AF65E22366C9A30060A1BE /* PBXContainerItemProxy */;
-		};
 		78B088E42367FA8F002CD587 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 78B088DD2367FA8F002CD587 /* DCLog */;
 			targetProxy = 78B088E32367FA8F002CD587 /* PBXContainerItemProxy */;
+		};
+		78D0D3D5236C0D0600079E0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78D0D3CE236C0D0600079E0C /* DCCommon */;
+			targetProxy = 78D0D3D4236C0D0600079E0C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -806,6 +872,118 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		788BDD0A236C095900A2AB9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DCTemplates/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCTemplates;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		788BDD0B236C095900A2AB9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DCTemplates/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCTemplates;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		788BDD1B236C096200A2AB9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DCTemplatesUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCTemplatesUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		788BDD1C236C096200A2AB9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DCTemplatesUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCTemplatesUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		78AF65432366C7B00060A1BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1011,124 +1189,6 @@
 			};
 			name = Release;
 		};
-		78AF65C32366C97B0060A1BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DCCommonUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCCommonUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		78AF65C42366C97B0060A1BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DCCommonUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCCommonUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		78AF65D42366C9810060A1BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DCCommon/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCCommon;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		78AF65D52366C9810060A1BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DCCommon/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCCommon;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		78B088E72367FA8F002CD587 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1184,9 +1244,82 @@
 			};
 			name = Release;
 		};
+		78D0D3D8236C0D0600079E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DCCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78D0D3D9236C0D0600079E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DCCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		788BDD09236C095900A2AB9B /* Build configuration list for PBXNativeTarget "DCTemplates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788BDD0A236C095900A2AB9B /* Debug */,
+				788BDD0B236C095900A2AB9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		788BDD1A236C096200A2AB9B /* Build configuration list for PBXNativeTarget "DCTemplatesUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788BDD1B236C096200A2AB9B /* Debug */,
+				788BDD1C236C096200A2AB9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		78AF652C2366C7AF0060A1BE /* Build configuration list for PBXProject "dclife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1214,29 +1347,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78AF65C22366C97B0060A1BE /* Build configuration list for PBXNativeTarget "DCCommonUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78AF65C32366C97B0060A1BE /* Debug */,
-				78AF65C42366C97B0060A1BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		78AF65D32366C9810060A1BE /* Build configuration list for PBXNativeTarget "DCCommon" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78AF65D42366C9810060A1BE /* Debug */,
-				78AF65D52366C9810060A1BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		78B088E92367FA8F002CD587 /* Build configuration list for PBXNativeTarget "DCLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78B088E72367FA8F002CD587 /* Debug */,
 				78B088E82367FA8F002CD587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D0D3DA236C0D0600079E0C /* Build configuration list for PBXNativeTarget "DCCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D0D3D8236C0D0600079E0C /* Debug */,
+				78D0D3D9236C0D0600079E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

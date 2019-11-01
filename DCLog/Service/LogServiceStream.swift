@@ -3,9 +3,9 @@
 //
 
 import Foundation
-import DCCommon
+import DCTemplates
 
-public protocol LogServiceStream: Common.Service.LogicProtocol {
+public protocol LogServiceStream: Templates.Service.LogicProtocol {
     var fields: [Log.Model.Event.Field] { get set }
     var dateFormatter: Log.Durable.Transformation.Date.Formatter { get set }
     var device: Log.Model.Device { get set }

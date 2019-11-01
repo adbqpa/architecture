@@ -1,10 +1,10 @@
 //
-//  Common
+//  dclife
 //
 
 import Foundation
 
-public enum Common {
+public enum Templates {
     public enum Model {}
     public enum Service {}
     public enum Durable {}

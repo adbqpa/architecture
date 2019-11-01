@@ -3,11 +3,11 @@
 //
 
 import Foundation
-import DCCommonUI
-import DCCommon
+import DCTemplates
+import DCTemplatesUI
 
 extension Main.UI.Service {
-    class First: NSObject, Common.UI.Service.CollectionProtocol {
+    class First: Templates.UI.Service.Collection {
         
         var collection = [Main.UI.Model.Row]()
         
