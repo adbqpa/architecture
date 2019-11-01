@@ -3,9 +3,9 @@
 //
 
 import Foundation
-import DCTemplates
+import DCModule
 
-public protocol LogDurableTransformationDateFormatter: Templates.Durable.FormatterProtocol {
+public protocol LogDurableTransformationDateFormatter: Module.Durable.FormatterProtocol {
     var formatter: Foundation.DateFormatter { get }
 }
 

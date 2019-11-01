@@ -3,11 +3,11 @@
 //
 
 import Foundation
-import DCTemplates
-import DCTemplatesUI
+import DCModule
+import DCModuleUI
 
 extension Main.UI.Service {
-    public class Second: Templates.UI.Service.Object {
+    public class Second: Module.UI.Service.Object {
         public var object: Main.UI.Model.Row?
     }
 }

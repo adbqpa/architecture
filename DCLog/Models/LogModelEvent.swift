@@ -3,11 +3,11 @@
 //
 
 import Foundation
-import DCTemplates
+import DCModule
 import DCCommon
 
 extension Log.Model {
-    public struct Event: Templates.Model.ObjectProtocol {
+    public struct Event: Module.Model.ObjectProtocol {
         public let uuid = String.randomUUID()
         public let level: Level
         public let domain: String

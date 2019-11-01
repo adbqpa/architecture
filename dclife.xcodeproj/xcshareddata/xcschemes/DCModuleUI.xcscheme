@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "788BDD10236C096200A2AB9B"
-               BuildableName = "DCTemplatesUI.framework"
-               BlueprintName = "DCTemplatesUI"
+               BlueprintIdentifier = "78FB28CA236C31F8001756C9"
+               BuildableName = "DCModuleUI.framework"
+               BlueprintName = "DCModuleUI"
                ReferencedContainer = "container:dclife.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "788BDD10236C096200A2AB9B"
-            BuildableName = "DCTemplatesUI.framework"
-            BlueprintName = "DCTemplatesUI"
+            BlueprintIdentifier = "78FB28CA236C31F8001756C9"
+            BuildableName = "DCModuleUI.framework"
+            BlueprintName = "DCModuleUI"
             ReferencedContainer = "container:dclife.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

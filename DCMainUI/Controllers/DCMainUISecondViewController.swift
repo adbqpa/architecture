@@ -3,14 +3,14 @@
 //
 
 import UIKit
-import DCTemplates
-import DCTemplatesUI
+import DCModule
+import DCModuleUI
 
-public class DCMainUISecondViewController: Templates.UI.Controller.Object {
+public class DCMainUISecondViewController: Module.UI.Controller.Object {
     
     // MARK: - Common.UI.Controller.ObjectProtocol
     
-    public weak var flow: Templates.UI.Flow.ObjectProtocol!
+    public weak var flow: Module.UI.Flow.ObjectProtocol!
     
     public static var storyboardIdentifier: String { return "second" }
 

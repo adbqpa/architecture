@@ -3,19 +3,19 @@
 //
 
 import UIKit
-import DCTemplates
+import DCModule
 
-@objc public protocol TemplatesUIComponentProtocol: NSObjectProtocol {}
+@objc public protocol ModuleUIComponentProtocol: NSObjectProtocol {}
 
-public extension Templates.UI.ComponentProtocol {
+public extension Module.UI.ComponentProtocol {
     static var bundle: Bundle { return Bundle(for: self) }
     static var storyboard: UIStoryboard { return UIStoryboard(name: storyboardName, bundle: bundle) }
     static var storyboardName: String { return bundle.bundleURL.lastPathComponent.replacingOccurrences(of: ".framework", with: "") }
 }
 
-extension Templates.UI {
-    public typealias ComponentProtocol = TemplatesUIComponentProtocol
-    public class Component: NSObject, Templates.UI.ComponentProtocol {
+extension Module.UI {
+    public typealias ComponentProtocol = ModuleUIComponentProtocol
+    public class Component: NSObject, Module.UI.ComponentProtocol {
         static var bundle: Bundle { return Bundle(for: self) }
         static var storyboard: UIStoryboard { return UIStoryboard(name: storyboardName, bundle: bundle) }
         static var storyboardName: String { return bundle.bundleURL.lastPathComponent.replacingOccurrences(of: ".framework", with: "") }

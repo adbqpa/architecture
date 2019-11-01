@@ -3,11 +3,11 @@
 //
 
 import Foundation
-import DCTemplates
-import DCTemplatesUI
+import DCModule
+import DCModuleUI
 
 extension Main.UI.Model {
-    public class Row: NSObject, Templates.UI.Model.ObjectProtocol {
+    public class Row: Module.UI.Model.Object {
         public let name: String
         public init(name: String) {
             self.name = name

@@ -4,19 +4,19 @@
 
 import Foundation
 
-public protocol ServiceLogicProtocol: Templates.ComponentProtocol {}
+public protocol ServiceLogicProtocol: Module.ComponentProtocol {}
 
-public protocol ServiceObjectProtocol: Templates.Service.LogicProtocol {
+public protocol ServiceObjectProtocol: Module.Service.LogicProtocol {
     associatedtype T
     var object: T? { get }
 }
 
-public protocol ServiceCollectionProtocol: Templates.Service.LogicProtocol {
+public protocol ServiceCollectionProtocol: Module.Service.LogicProtocol {
     associatedtype T
     var collection: [T] { get }
 }
 
-extension Templates.Service {
+extension Module.Service {
     public typealias LogicProtocol = ServiceLogicProtocol
     public typealias ObjectProtocol = ServiceObjectProtocol
     public typealias CollectionProtocol = ServiceCollectionProtocol

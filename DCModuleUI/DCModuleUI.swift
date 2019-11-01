@@ -4,9 +4,9 @@
 
 
 import Foundation
-import DCTemplates
+import DCModule
 
-extension Templates {
+extension Module {
     public enum UI {
         public enum Flow {}
         public enum Model {}

@@ -3,11 +3,11 @@
 //
 
 import Foundation
-import DCTemplates
-import DCTemplatesUI
+import DCModule
+import DCModuleUI
 
 extension Main.UI.Service {
-    class First: Templates.UI.Service.Collection {
+    class First: Module.UI.Service.Collection {
         
         var collection = [Main.UI.Model.Row]()
         
