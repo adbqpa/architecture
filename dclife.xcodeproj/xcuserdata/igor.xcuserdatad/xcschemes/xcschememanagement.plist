@@ -22,12 +22,12 @@
 		<key>DCModule.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>DCModuleUI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
 		</dict>
 		<key>dclife.xcscheme</key>
 		<dict>
@@ -37,6 +37,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>78FB28B9236C31F0001756C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>78FB28CA236C31F8001756C9</key>
 		<dict>
 			<key>primary</key>
