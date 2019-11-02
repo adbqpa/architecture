@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782E1AB8236D619700A2ADD7 /* ControllerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E1AB7236D619700A2ADD7 /* ControllerContent.swift */; };
+		782E1ABA236D636B00A2ADD7 /* ViewContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E1AB9236D636B00A2ADD7 /* ViewContentCell.swift */; };
+		782E1ABD236D643800A2ADD7 /* ModelContentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E1ABB236D643800A2ADD7 /* ModelContentRow.swift */; };
+		782E1ABE236D643800A2ADD7 /* ModelContentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E1ABC236D643800A2ADD7 /* ModelContentSection.swift */; };
 		787626312366CC64001B4F0D /* DCMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787626262366CC64001B4F0D /* DCMain.swift */; };
 		787626322366CC64001B4F0D /* MainUIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787626282366CC64001B4F0D /* MainUIService.swift */; };
 		787626332366CC64001B4F0D /* MainUIServiceSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787626292366CC64001B4F0D /* MainUIServiceSecond.swift */; };
@@ -201,6 +205,10 @@
 
 /* Begin PBXFileReference section */
 		781F28AD236B4E9D00D8639D /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		782E1AB7236D619700A2ADD7 /* ControllerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerContent.swift; sourceTree = "<group>"; };
+		782E1AB9236D636B00A2ADD7 /* ViewContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContentCell.swift; sourceTree = "<group>"; };
+		782E1ABB236D643800A2ADD7 /* ModelContentRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelContentRow.swift; sourceTree = "<group>"; };
+		782E1ABC236D643800A2ADD7 /* ModelContentSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelContentSection.swift; sourceTree = "<group>"; };
 		787626262366CC64001B4F0D /* DCMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCMain.swift; sourceTree = "<group>"; };
 		787626282366CC64001B4F0D /* MainUIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUIService.swift; sourceTree = "<group>"; };
 		787626292366CC64001B4F0D /* MainUIServiceSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUIServiceSecond.swift; sourceTree = "<group>"; };
@@ -314,6 +322,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		782E1AAF236D611600A2ADD7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7892F9042369D8E700300812 /* Component.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		782E1AB0236D612100A2ADD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7892F90A2369DD2E00300812 /* View.swift */,
+				782E1AB9236D636B00A2ADD7 /* ViewContentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		782E1AB1236D612B00A2ADD7 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				7892F9062369D93400300812 /* Flow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		782E1AB2236D613400A2ADD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7892F9082369DAD500300812 /* Model.swift */,
+				782E1ABB236D643800A2ADD7 /* ModelContentRow.swift */,
+				782E1ABC236D643800A2ADD7 /* ModelContentSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		782E1AB3236D613D00A2ADD7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7892F90C2369DD5B00300812 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		782E1AB4236D614500A2ADD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7892F90E2369DF8200300812 /* Controller.swift */,
+				782E1AB7236D619700A2ADD7 /* ControllerContent.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		782E1AB6236D615C00A2ADD7 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				788BDCBF236BC55200A2AB9B /* Factory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		787626272366CC64001B4F0D /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,20 +425,6 @@
 				7892F8FF2369D85A00300812 /* Durable.swift */,
 				7892F9012369D89E00300812 /* Factory.swift */,
 				781F28AD236B4E9D00D8639D /* Context.swift */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		788BDCF1236C074400A2AB9B /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				7892F9042369D8E700300812 /* Component.swift */,
-				7892F9062369D93400300812 /* Flow.swift */,
-				7892F9082369DAD500300812 /* Model.swift */,
-				7892F90C2369DD5B00300812 /* Service.swift */,
-				7892F90A2369DD2E00300812 /* View.swift */,
-				7892F90E2369DF8200300812 /* Controller.swift */,
-				788BDCBF236BC55200A2AB9B /* Factory.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -515,7 +569,13 @@
 				78FB28CD236C31F8001756C9 /* DCModuleUI.h */,
 				78FB28CE236C31F8001756C9 /* Info.plist */,
 				788BDCF2236C076F00A2AB9B /* DCModuleUI.swift */,
-				788BDCF1236C074400A2AB9B /* Categories */,
+				782E1AAF236D611600A2ADD7 /* Component */,
+				782E1AB1236D612B00A2ADD7 /* Flow */,
+				782E1AB2236D613400A2ADD7 /* Model */,
+				782E1AB3236D613D00A2ADD7 /* Service */,
+				782E1AB4236D614500A2ADD7 /* Controller */,
+				782E1AB0236D612100A2ADD7 /* View */,
+				782E1AB6236D615C00A2ADD7 /* Factory */,
 			);
 			path = DCModuleUI;
 			sourceTree = "<group>";
@@ -860,11 +920,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				78FB28F7236C3537001756C9 /* Factory.swift in Sources */,
+				782E1AB8236D619700A2ADD7 /* ControllerContent.swift in Sources */,
 				78FB28F2236C3537001756C9 /* Flow.swift in Sources */,
+				782E1ABD236D643800A2ADD7 /* ModelContentRow.swift in Sources */,
 				78FB28DE236C331E001756C9 /* DCModuleUI.swift in Sources */,
+				782E1ABE236D643800A2ADD7 /* ModelContentSection.swift in Sources */,
 				78FB28F5236C3537001756C9 /* View.swift in Sources */,
 				78FB28F4236C3537001756C9 /* Service.swift in Sources */,
 				78FB28F1236C3537001756C9 /* Component.swift in Sources */,
+				782E1ABA236D636B00A2ADD7 /* ViewContentCell.swift in Sources */,
 				78FB28F3236C3537001756C9 /* Model.swift in Sources */,
 				78FB28F6236C3537001756C9 /* Controller.swift in Sources */,
 			);
