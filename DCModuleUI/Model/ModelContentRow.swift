@@ -6,10 +6,10 @@ import Foundation
 import DCModule
 
 extension Module.UI.Model.Content {
-    public struct Row {
+    public class Row: Module.UI.Model.Component {
         public let kind: Kind
-        public let content: Module.UI.Controller.Content.ObjectProtocol
-        public init(kind: Kind, content: Module.UI.Controller.Content.ObjectProtocol) {
+        public let content: Module.UI.Controller.Content.ComponentProtocol
+        public init(kind: Kind, content: Module.UI.Controller.Content.ComponentProtocol) {
             self.kind = kind
             self.content = content
         }
