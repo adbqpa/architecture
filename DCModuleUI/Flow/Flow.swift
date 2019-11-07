@@ -6,7 +6,7 @@ import UIKit
 import DCModule
 
 public protocol ModuleUIFlowObjectProtocol: Module.UI.ComponentProtocol {
-    var parent: Module.UI.Flow.ObjectProtocol! { get set }
+    var parent: Module.UI.Flow.ObjectProtocol? { get set }
     var initialViewController: UIViewController! { get }
 }
 
