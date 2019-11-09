@@ -11,7 +11,7 @@ extension Main.UI.Flow {
         
         public var parent: Module.UI.Flow.ObjectProtocol?
         
-        public lazy var navigationController: UINavigationController? = {
+        public lazy var navigationController: UINavigationController! = {
             return Initial.storyboard.instantiateInitialViewController() as? UINavigationController
         }()
         

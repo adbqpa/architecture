@@ -5,8 +5,9 @@
 import Foundation
 import DCModule
 
-@objc public protocol ModuleUIFactory: Module.UI.ComponentProtocol {}
+@objc public protocol ModuleUIFactoryProtocol: Module.UI.ComponentProtocol {}
 
 extension Module.UI {
-    public typealias Factory = ModuleUIFactory
+    public typealias FactoryProtocol = ModuleUIFactoryProtocol
+    public typealias Factory = (NSObject & FactoryProtocol)
 }
