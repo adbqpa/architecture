@@ -5,18 +5,18 @@
 import UIKit
 import DCModule
 
-public protocol ModuleUIControllerObjectProtocol: Module.UI.ComponentProtocol {
-    var flow: Module.UI.Flow.ObjectProtocol! { get set }
+public protocol ModuleUIControllerComponentProtocol: Module.UI.ComponentProtocol {
+    var flow: Module.UI.Flow.ComponentProtocol! { get set }
     static var storyboardIdentifier: String { get }
 }
 
-public extension Module.UI.Controller.ObjectProtocol {
+public extension Module.UI.Controller.ComponentProtocol {
     static func viewController() -> Self {
         return storyboard.instantiateViewController(withIdentifier: storyboardIdentifier) as! Self
     }
 }
 
 extension Module.UI.Controller {
-    public typealias ObjectProtocol = ModuleUIControllerObjectProtocol
-    public typealias Object = (UIViewController & ObjectProtocol)
+    public typealias ComponentProtocol = ModuleUIControllerComponentProtocol
+    public typealias Component = (UIViewController & ComponentProtocol)
 }

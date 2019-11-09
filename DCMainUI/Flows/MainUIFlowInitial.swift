@@ -9,7 +9,7 @@ import DCModuleUI
 extension Main.UI.Flow {
     public class Initial: Module.UI.Flow.Navigation {
         
-        public var parent: Module.UI.Flow.ObjectProtocol?
+        public var parent: Module.UI.Flow.ComponentProtocol?
         
         public lazy var navigationController: UINavigationController! = {
             return Initial.storyboard.instantiateInitialViewController() as? UINavigationController

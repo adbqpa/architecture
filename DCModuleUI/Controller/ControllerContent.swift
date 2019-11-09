@@ -5,7 +5,7 @@
 import UIKit
 import DCModule
 
-public protocol ModuleUIControllerContentComponentProtocol: Module.UI.Controller.Object {
+public protocol ModuleUIControllerContentComponentProtocol: Module.UI.Controller.Component {
     var view: UIView! { get }
     var preferredContentSize: CGSize { get }
     var reloadHandler: (() -> Void)? { get set }

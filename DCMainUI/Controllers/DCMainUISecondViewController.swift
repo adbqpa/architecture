@@ -6,11 +6,11 @@ import UIKit
 import DCModule
 import DCModuleUI
 
-public class DCMainUISecondViewController: Module.UI.Controller.Object {
+public class DCMainUISecondViewController: Module.UI.Controller.Component {
     
     // MARK: - Common.UI.Controller.ObjectProtocol
     
-    public weak var flow: Module.UI.Flow.ObjectProtocol!
+    public weak var flow: Module.UI.Flow.ComponentProtocol!
     
     public static var storyboardIdentifier: String { return "second" }
 
