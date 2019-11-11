@@ -5,7 +5,7 @@
 import Foundation
 import DCModule
 
-@objc public protocol ModuleUIFactoryProtocol: Module.UI.ComponentProtocol {}
+public protocol ModuleUIFactoryProtocol: Module.UI.ComponentProtocol {}
 
 extension Module.UI {
     public typealias FactoryProtocol = ModuleUIFactoryProtocol

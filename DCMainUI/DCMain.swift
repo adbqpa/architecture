@@ -10,8 +10,8 @@ public enum Main {
         public enum Service {}
         public enum Model {}
         public enum Controller {
-            public typealias First = DCMainUIViewController
-            public typealias Second = DCMainUISecondViewController
+            public typealias First = ControllerFirst
+            public typealias Second = ControllerSecond
         }
     }
 }

@@ -6,15 +6,11 @@ import UIKit
 import DCModule
 import DCModuleUI
 
-public class DCMainUIViewController: Module.UI.Controller.Component {
-    
-    // MARK: - Common.UI.Controller
-    
-    public weak var flow: Module.UI.Flow.ComponentProtocol!
-    public static var storyboardIdentifier = "first"
-    private let service = Main.UI.Service.First()
+public class ControllerFirst: Module.UI.Controller.Component {
     
     // MARK: - View LifeCycle
+    
+    private let service = Main.UI.Service.First()
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -25,7 +21,7 @@ public class DCMainUIViewController: Module.UI.Controller.Component {
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
-extension DCMainUIViewController: UITableViewDataSource, UITableViewDelegate {
+extension ControllerFirst: UITableViewDataSource, UITableViewDelegate {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return service.collection.count
     }

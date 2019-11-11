@@ -39,6 +39,7 @@ extension Module {
             }
         }
         public enum Controller {
+            public typealias Component = ModuleUIControllerComponent
             public enum Content {
                 public typealias ComponentProtocol = ModuleUIControllerContentComponentProtocol
                 public typealias Component = (UIViewController & ComponentProtocol)

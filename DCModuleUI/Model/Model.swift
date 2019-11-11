@@ -5,4 +5,4 @@
 import Foundation
 import DCModule
 
-@objc public protocol ModuleUIModelComponentProtocol: Module.UI.ComponentProtocol {}
+public protocol ModuleUIModelComponentProtocol: Module.UI.ComponentProtocol {}
