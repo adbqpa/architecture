@@ -12,7 +12,7 @@ extension Module.UI.Flow {
         open var storyboard: UIStoryboard { return UIStoryboard(name: storyboardName, bundle: bundle) }
         
         weak var parent: Module.UI.Flow.Component?
-        lazy var viewController: UIViewController = {
+        open lazy var viewController: UIViewController = {
             let result = initialViewController
             (result as? Module.UI.Controller.Component)?.flow = self
             return result
