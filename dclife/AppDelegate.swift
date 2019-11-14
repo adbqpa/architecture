@@ -10,12 +10,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    let flow = Main.UI.Flow.Initial()
+    let flow = Main.UI.Flow.TabBar()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window?.rootViewController = flow.initialViewController
+        window?.rootViewController = flow.viewController
         return true
     }
-
 
 }

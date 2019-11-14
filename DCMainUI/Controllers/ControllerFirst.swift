@@ -8,6 +8,8 @@ import DCModuleUI
 
 public class ControllerFirst: Module.UI.Controller.Component {
     
+    public override class var storyboardIdentifier: String { return "first" }
+    
     // MARK: - View LifeCycle
     
     private let service = Main.UI.Service.First()
@@ -32,7 +34,7 @@ extension ControllerFirst: UITableViewDataSource, UITableViewDelegate {
     }
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        (flow as! Main.UI.Flow.Initial).showSecond(row: service.collection[indexPath.row])
+        (flow.parent as! Main.UI.Flow.Navigation).showSecond(row: service.collection[indexPath.row])
     }
 }
 
