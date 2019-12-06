@@ -65,7 +65,6 @@
 		78FB28DD236C32D0001756C9 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F28AD236B4E9D00D8639D /* Context.swift */; };
 		78FB28DE236C331E001756C9 /* DCModuleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BDCF2236C076F00A2AB9B /* DCModuleUI.swift */; };
 		78FB28DF236C3374001756C9 /* DCModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FB28BA236C31F0001756C9 /* DCModule.framework */; };
-		78FB28E0236C3374001756C9 /* DCModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78FB28BA236C31F0001756C9 /* DCModule.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		78FB28E4236C3490001756C9 /* DCModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FB28BA236C31F0001756C9 /* DCModule.framework */; };
 		78FB28E5236C3490001756C9 /* DCModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78FB28BA236C31F0001756C9 /* DCModule.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		78FB28E8236C34EF001756C9 /* DCModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FB28CB236C31F8001756C9 /* DCModuleUI.framework */; };
@@ -178,17 +177,6 @@
 			files = (
 				78FB287C236C1168001756C9 /* DCCommon.framework in Embed Frameworks */,
 				78FB28E5236C3490001756C9 /* DCModule.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78FB28E3236C3374001756C9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				78FB28E0236C3374001756C9 /* DCModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -747,7 +735,6 @@
 				78FB28C7236C31F8001756C9 /* Sources */,
 				78FB28C8236C31F8001756C9 /* Frameworks */,
 				78FB28C9236C31F8001756C9 /* Resources */,
-				78FB28E3236C3374001756C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
